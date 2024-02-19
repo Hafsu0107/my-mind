@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>mymind is the extension for your mind</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- task-start -->
+    <!-- header-start -->
+
+    <nav>
+      <div class="nav">
+        <logo
+          ><svg
+            width="167"
+            height="32"
+            viewBox="0 0 167 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M11.0779 1.83247L11.0686 1.83116C10.872 1.80344 10.6111 1.8 10.1828 1.8C9.4392 1.8 8.68609 1.91452 7.91801 2.15202C5.53105 2.95668 3.55913 5.0594 2.50506 8.34963C1.49643 11.5549 1.5623 15.4146 2.75247 19.212C4.74922 25.4378 9.26094 29.6437 13.5631 30.1643L13.5672 30.1648C13.836 30.1979 14.1234 30.2 14.4839 30.2C15.2275 30.2 15.9806 30.0855 16.7487 29.848C19.157 29.0364 21.1574 26.967 22.1544 23.6736L22.1573 23.6639L22.1604 23.6543C23.1703 20.4482 23.1048 16.587 21.9142 12.788C19.9217 6.57563 15.4118 2.39725 11.0872 1.83369L11.0779 1.83247ZM23.63 12.2439C24.9154 16.3415 25.0143 20.5854 23.8772 24.1951C22.7401 27.9512 20.3671 30.5366 17.3019 31.561C16.3626 31.8537 15.4232 32 14.4839 32C14.1378 32 13.7423 32 13.3468 31.9512C8.10635 31.3171 3.16251 26.3902 1.03666 19.7561C-0.248739 15.6585 -0.347616 11.4146 0.789467 7.80488C1.97599 4.09756 4.29959 1.46341 7.36477 0.439024C8.3041 0.146341 9.24343 0 10.1828 0C10.5783 0 10.9738 0 11.3198 0.0487805C16.5603 0.731707 21.5042 5.60976 23.63 12.2439Z"
+              fill="black"
+            ></path>
+            <path
+              d="M9.97778 15.1096C10.9061 15.1096 11.6587 14.367 11.6587 13.451C11.6587 12.535 10.9061 11.7925 9.97778 11.7925C9.04944 11.7925 8.29688 12.535 8.29688 13.451C8.29688 14.367 9.04944 15.1096 9.97778 15.1096Z"
+              fill="black"
+            ></path>
+            <path
+              d="M18.0894 21.1098L12.75 7.5L21.1051 19.939L18.0894 21.1098Z"
+              fill="black"
+            ></path>
+            <path
+              d="M61.184 15.7931V24.6582H57.8038V16.2234C57.8038 13.9856 56.6474 12.6946 54.6015 12.6946C52.7335 12.6946 51.4882 13.9856 51.3103 15.707V24.6582H48.0191V16.2234C48.0191 13.9856 46.7738 12.6946 44.9947 12.6946C42.8599 12.6946 41.5256 14.2438 41.5256 16.2234V24.5721H38.2344V9.9404H41.3477V11.92C42.1483 10.6289 43.4825 9.68219 45.7063 9.68219C47.8412 9.68219 49.5313 10.6289 50.5097 12.3503C51.3993 10.8011 53.0893 9.68219 55.4021 9.68219C58.8712 9.76826 61.184 12.1782 61.184 15.7931Z"
+              fill="black"
+            ></path>
+            <path
+              d="M64.3831 31.8884L68.119 23.5397L62.0703 10.0269H65.8063L69.8981 20.0108L73.9899 10.0269H77.6369L67.9411 31.8884H64.3831Z"
+              fill="black"
+            ></path>
+            <path
+              d="M102.171 15.793V24.6581H98.791V16.2234C98.791 13.9856 97.635 12.6945 95.589 12.6945C93.7209 12.6945 92.4756 13.9856 92.2977 15.707V24.6581H88.9175V16.2234C88.9175 13.9856 87.6722 12.6945 85.8932 12.6945C83.7583 12.6945 82.424 14.2438 82.424 16.2234V24.572H79.1328V9.94034H82.2461V11.9199C83.0467 10.6289 84.381 9.68213 86.6048 9.68213C88.7396 9.68213 90.4297 10.6289 91.4082 12.3503C92.2977 10.801 93.9878 9.68213 96.301 9.68213C99.859 9.7682 102.171 12.1781 102.171 15.793Z"
+              fill="black"
+            ></path>
+            <path
+              d="M109.024 4.94889C109.024 6.06779 108.046 6.92848 106.89 6.92848C105.733 6.92848 104.844 6.06779 104.844 4.94889C104.844 3.83 105.822 2.96931 106.89 2.96931C108.135 2.88324 109.024 3.83 109.024 4.94889ZM105.289 24.6587V10.027H108.58V24.6587H105.289Z"
+              fill="black"
+            ></path>
+            <path
+              d="M125.393 15.793V24.6581H122.012V16.2234C122.012 13.9856 120.678 12.6945 118.721 12.6945C116.586 12.6945 115.252 14.2438 115.252 16.2234V24.572H111.961V9.94034H115.074V11.9199C115.875 10.6289 117.298 9.68213 119.522 9.68213C122.902 9.7682 125.393 12.006 125.393 15.793Z"
+              fill="black"
+            ></path>
+            <path
+              d="M139.885 24.6584V22.5928C139.084 23.9699 137.216 24.9166 134.903 24.9166C130.723 24.9166 127.609 21.9903 127.609 17.3426C127.609 12.6948 130.723 9.76849 134.903 9.76849C137.216 9.76849 138.906 10.6292 139.707 11.8341V2.45264H142.998V24.6584H139.885ZM130.99 17.3426C130.99 20.441 132.858 22.1624 135.437 22.1624C137.928 22.1624 139.707 20.6132 139.707 17.6868V16.9122C139.707 13.9859 137.928 12.4366 135.437 12.4366C132.858 12.4366 130.99 14.2441 130.99 17.3426Z"
+              fill="black"
+            ></path>
+            <path
+              d="M150 4.31949V2.90912H156.645V4.31949H154.168V11H152.477V4.31949H150Z"
+              fill="black"
+            ></path>
+            <path
+              d="M158.184 2.90912H160.294L162.522 8.34518H162.617L164.845 2.90912H166.955V11H165.295V5.73382H165.228L163.134 10.9605H162.005L159.911 5.71406H159.844V11H158.184V2.90912Z"
+              fill="black"
+            ></path>
+          </svg>
+        </logo>
+        <ul class="first">
+          <li>What</li>
+          <li>Why</li>
+          <li>How</li>
+          <li>What's New</li>
+        </ul>
+        <div class="buttons">
+          <a href="https://access.mymind.com/signin"><span>Log in</span></a>
+          <button class="signup">Sign up</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- header-end -->
+
+    <!-- sec-one-start -->
+    <section class="one">
+      <div class="intro">
+        <h1 class="main-heading">
+          Remember everything.<br />
+          Organize nothing.
+        </h1>
+        <p class="main-para">
+          All your <button class="note">notes</button
+          ><button class="book">bookmarks</button
+          ><button class="inspiration">inspiration</button
+          ><button class="article">articles</button>and
+          <button class="image">images</button>in one single private place
+        </p>
+        <video
+          id="video1"
+          playsinline=""
+          autoplay=""
+          muted=""
+          loop=""
+          preload="auto"
+          class="video-1"
+          width="890px"
+          src="https://carbon-media.accelerator.net/00000000001/9KZwegmX5FXdeLO5v27sRH;crf(30).mp4"
+        >
+          <source
+            src="https://carbon-media.accelerator.net/00000000001/9KZwegmX5FXdeLO5v27sRH;crf(30)/hevc.mp4"
+            type="video/mp4; codecs=hvc1"
+          />
+          <source
+            src="https://carbon-media.accelerator.net/00000000001/9KZwegmX5FXdeLO5v27sRH;crf(30).mp4"
+            type="video/mp4; codecs=avc1.4d002a"
+          />
+        </video>
+      </div>
+      <div class="our-manifesto">
+        <span class="sub-heading">OUR MANIFESTO</span>
+        <p class="para-one">
+          <span class="in">In</span> a time when every company has a bid on our
+          data, when we exchange our privacy for information, when every move we
+          make is influenced by how others will perceive it, we have little
+          space to call our own.
+        </p>
+        <p class="para-two">
+          Our minds have been taken captive – <br />by social approval systems,
+          by newsfeeds and timelines, by advertisements and corporate agendas.
+          Our information is scattered across platforms, bound by terms and
+          conditions.
+        </p>
+
+        <p class="para-three">
+          What should have never been lost is now yours again.
+          <strong>We promise:</strong>
+        </p>
+        <ul class="no-sec">
+          <li>
+            <svg
+              width="74"
+              height="39"
+              viewBox="0 0 74 39"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M31.4439 38V1.36832H24.3139V25.6L9.07222 1.36832H0.185547V38H7.31555V12.0117L23.9522 38H31.4439Z"
+                fill="#FF5924"
+              ></path>
+              <path
+                d="M43.72 19.6583C43.72 11.3917 49.5066 7.46499 55.1383 7.46499C60.8216 7.46499 66.6083 11.3917 66.6083 19.6583C66.6083 27.925 60.8216 31.8517 55.1383 31.8517C49.5066 31.8517 43.72 27.925 43.72 19.6583ZM36.3316 19.71C36.3316 31.49 45.2183 38.775 55.1383 38.775C65.11 38.775 73.9966 31.49 73.9966 19.71C73.9966 7.87832 65.11 0.593323 55.1383 0.593323C45.2183 0.593323 36.3316 7.87832 36.3316 19.71Z"
+                fill="#FF5924"
+              ></path>
+            </svg>
+            social features
+          </li>
+          <li>
+            <svg
+              width="74"
+              height="39"
+              viewBox="0 0 74 39"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M31.4439 38V1.36832H24.3139V25.6L9.07222 1.36832H0.185547V38H7.31555V12.0117L23.9522 38H31.4439Z"
+                fill="#FF5924"
+              ></path>
+              <path
+                d="M43.72 19.6583C43.72 11.3917 49.5066 7.46499 55.1383 7.46499C60.8216 7.46499 66.6083 11.3917 66.6083 19.6583C66.6083 27.925 60.8216 31.8517 55.1383 31.8517C49.5066 31.8517 43.72 27.925 43.72 19.6583ZM36.3316 19.71C36.3316 31.49 45.2183 38.775 55.1383 38.775C65.11 38.775 73.9966 31.49 73.9966 19.71C73.9966 7.87832 65.11 0.593323 55.1383 0.593323C45.2183 0.593323 36.3316 7.87832 36.3316 19.71Z"
+                fill="#FF5924"
+              ></path>
+            </svg>
+            vanity metrics
+          </li>
+          <li>
+            <svg
+              width="74"
+              height="39"
+              viewBox="0 0 74 39"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M31.4439 38V1.36832H24.3139V25.6L9.07222 1.36832H0.185547V38H7.31555V12.0117L23.9522 38H31.4439Z"
+                fill="#FF5924"
+              ></path>
+              <path
+                d="M43.72 19.6583C43.72 11.3917 49.5066 7.46499 55.1383 7.46499C60.8216 7.46499 66.6083 11.3917 66.6083 19.6583C66.6083 27.925 60.8216 31.8517 55.1383 31.8517C49.5066 31.8517 43.72 27.925 43.72 19.6583ZM36.3316 19.71C36.3316 31.49 45.2183 38.775 55.1383 38.775C65.11 38.775 73.9966 31.49 73.9966 19.71C73.9966 7.87832 65.11 0.593323 55.1383 0.593323C45.2183 0.593323 36.3316 7.87832 36.3316 19.71Z"
+                fill="#FF5924"
+              ></path>
+            </svg>
+            tracking
+          </li>
+          <li>
+            <svg
+              width="74"
+              height="39"
+              viewBox="0 0 74 39"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M31.4439 38V1.36832H24.3139V25.6L9.07222 1.36832H0.185547V38H7.31555V12.0117L23.9522 38H31.4439Z"
+                fill="#FF5924"
+              ></path>
+              <path
+                d="M43.72 19.6583C43.72 11.3917 49.5066 7.46499 55.1383 7.46499C60.8216 7.46499 66.6083 11.3917 66.6083 19.6583C66.6083 27.925 60.8216 31.8517 55.1383 31.8517C49.5066 31.8517 43.72 27.925 43.72 19.6583ZM36.3316 19.71C36.3316 31.49 45.2183 38.775 55.1383 38.775C65.11 38.775 73.9966 31.49 73.9966 19.71C73.9966 7.87832 65.11 0.593323 55.1383 0.593323C45.2183 0.593323 36.3316 7.87832 36.3316 19.71Z"
+                fill="#FF5924"
+              ></path>
+            </svg>
+            social pressure
+          </li>
+          <li>
+            <svg
+              width="74"
+              height="39"
+              viewBox="0 0 74 39"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M31.4439 38V1.36832H24.3139V25.6L9.07222 1.36832H0.185547V38H7.31555V12.0117L23.9522 38H31.4439Z"
+                fill="#FF5924"
+              ></path>
+              <path
+                d="M43.72 19.6583C43.72 11.3917 49.5066 7.46499 55.1383 7.46499C60.8216 7.46499 66.6083 11.3917 66.6083 19.6583C66.6083 27.925 60.8216 31.8517 55.1383 31.8517C49.5066 31.8517 43.72 27.925 43.72 19.6583ZM36.3316 19.71C36.3316 31.49 45.2183 38.775 55.1383 38.775C65.11 38.775 73.9966 31.49 73.9966 19.71C73.9966 7.87832 65.11 0.593323 55.1383 0.593323C45.2183 0.593323 36.3316 7.87832 36.3316 19.71Z"
+                fill="#FF5924"
+              ></path>
+            </svg>
+            collaboration
+          </li>
+          <li>
+            <svg
+              width="74"
+              height="39"
+              viewBox="0 0 74 39"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M31.4439 38V1.36832H24.3139V25.6L9.07222 1.36832H0.185547V38H7.31555V12.0117L23.9522 38H31.4439Z"
+                fill="#FF5924"
+              ></path>
+              <path
+                d="M43.72 19.6583C43.72 11.3917 49.5066 7.46499 55.1383 7.46499C60.8216 7.46499 66.6083 11.3917 66.6083 19.6583C66.6083 27.925 60.8216 31.8517 55.1383 31.8517C49.5066 31.8517 43.72 27.925 43.72 19.6583ZM36.3316 19.71C36.3316 31.49 45.2183 38.775 55.1383 38.775C65.11 38.775 73.9966 31.49 73.9966 19.71C73.9966 7.87832 65.11 0.593323 55.1383 0.593323C45.2183 0.593323 36.3316 7.87832 36.3316 19.71Z"
+                fill="#FF5924"
+              ></path>
+            </svg>
+            ads
+          </li>
+        </ul>
+      </div>
+      <div class="welcome-mind">
+        <img
+          src="https://mymind.com/wp-content/uploads/2023/05/newmymind_type.svg"
+          alt=""
+        />
+        <div class="try">
+          <button class="try-it">TRY IT OUT ></button>
+        </div>
+      </div>
+
+      <div class="real-mind">
+        <h1 class="second-heading">
+          The first and only extension <br />
+          for your real mind.
+        </h1>
+        <p class="para-four">
+          One place for everything you care about. No need to file it, label or
+          even tag it. It’s all magically organized and visualized for you.
+        </p>
+        <video
+          id="smart-bookmarking"
+          class="smart-bookmarking-video"
+          style="aspect-ratio: 2600/1806; clip-path: inset(20px 20px)"
+          muted=""
+          playsinline=""
+          autoplay=""
+          width="1000px"
+          src="https://carbon-media.accelerator.net/00000000001/fq3lLYXwzGtbN5OzXE8UU6;original.mp4"
+        ></video>
+
+        <div class="inner">
+          <img
+            src="https://mymind.com/wp-content/uploads/2023/05/vid_button_icon.svg"
+            alt="button-icon"
+          />SEE THE MAGIC OF SMART BOOKMARKING
+        </div>
+      </div>
+    </section>
+    <!-- sec-one-end -->
+
+    <!-- sec-two-start -->
+    <section class="two">
+      <div class="just-word">
+        <p class="word">IT JUST WORDS</p>
+        <h1 class="third-heading">
+          Just save it. Artificial Intelligence
+          <button class="font-ai">AI</button>takes care of the rest.
+        </h1>
+
+        <p class="para-five">
+          Save anything with a click and stay in the flow. mymind understands
+          what it is and remembers the important details, so you don't have to.
+        </p>
+
+        <video
+          id="adding-to-mymind-video"
+          style="aspect-ratio: 2600/2206"
+          muted=""
+          playsinline=""
+          autoplay=""
+          loop=""
+          width="1000px"
+          src="https://carbon-media.accelerator.net/00000000001/lDJbwxCo9pjdq1Y4d0MtDE;original.webm"
+        ></video>
+      </div>
+    </section>
+    <!-- sec-two-end -->
+
+    <!-- sec-three-start -->
+    <section class="three">
+      <div class="waste-time">
+        <p class="no">NO WASTED TIME OR ENERGY</p>
+        <div class="intro">
+          <h1 class="four-heading">
+            Folders are dead. This is your<br />
+            personal search engine.
+          </h1>
+          <p class="para-six">
+            Search by color, keyword, brand, date – whatever you think of first.
+            Associative search & visual cues work with your brain to find it
+            instantly.
+          </p>
+        </div>
+        <div class="inner-1">
+          <img
+            src="https://mymind.com/wp-content/uploads/2023/04/VIDEO_button.svg"
+            alt="button-icon"
+          />WATCH THE VIDEO
+        </div>
+        <video
+          id="searching-mymind-video"
+          style="aspect-ratio: 2600/1354"
+          muted=""
+          playsinline=""
+          autoplay=""
+          loop=""
+          width="1000px"
+          src="https://carbon-media.accelerator.net/00000000001/lGf6kOyeDKjeAZdenRgWv2;original.webm"
+        ></video>
+      </div>
+    </section>
+    <!-- sec-three-end -->
+
+    <!-- sec-four-start -->
+    <section class="four">
+      <div class="oasis">
+        <p class="your">YOUR PRIVATE OASIS</p>
+        <h1 class="fifth-heading">
+          A treasure trove of ideas,<br />
+          inspiration & references
+        </h1>
+
+        <div class="images-sec">
+          <div class="img-sec-one">
+            <div class="friction">
+              <img
+                class="fric-img"
+                src="https://mymind.com/wp-content/uploads/2023/06/features-frictionless-notetaking-1.webp"
+                width="500px"
+                height="600px"
+                alt="features-frictionless-notetaking (1)"
+                caption=""
+                data-width="original"
+                data-scaling="no"
+              />
+              <div class="fric-intro">
+                <h2 class="frictionless">
+                  Frictionless<br />
+                  notetaking
+                </h2>
+                <p class="para-seven">
+                  Ideas no longer slip away. Take quick notes on the go and
+                  enter Focus Mode to expand on them later. Clean and simple.
+                </p>
+              </div>
+            </div>
+
+            <div class="bookmarking">
+              <img
+                class="book-img"
+                src="https://mymind.com/wp-content/uploads/2023/06/features-smart-bookmarking.webp"
+                width="700px"
+                height="600px"
+                alt="features-smart-bookmarking"
+              />
+              <div class="booking">
+                <h2 class="smart">Smart Bookmarking</h2>
+                <p class="para-eight">
+                  No URL is treated the same. Your new mind knows if an item is
+                  an article, a product, a book or even a recipe. Every link is
+                  saved in a beautiful way that makes sense.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="img-sec-two">
+            <div class="distraction">
+              <img
+                class="aeon"
+                src="https://mymind.com/wp-content/uploads/2023/06/features-read-without-distractions.webp"
+                width="600"
+                height="600"
+                alt="features-read-without-distractions"
+                caption=""
+                data-width="original"
+                data-scaling="no"
+              />
+              <h2 class="read">Read without distractions</h2>
+              <p class="para-nine">
+                Save entire articles to your mind to read without clutter, ads
+                or annoying pop-ups. mymind strips out the excess so you can
+                focus.
+              </p>
+            </div>
+
+            <div class="collection">
+              <img
+                class="images"
+                src="https://mymind.com/wp-content/uploads/2023/06/features-instant-collections.webp"
+                width="600"
+                height="600"
+                alt="features-instant-collections"
+                caption=""
+                data-width="original"
+                data-scaling="no"
+              />
+              
+             <h2 class="instant">Instant Collection</h2>
+              <p class="para-ten">
+                Create Smart Spaces that auto-sort what you save, on your terms.
+                Your mind automatically knows where it goes.
+              </p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- sec-four-end -->
+
+    <!-- sec-five-start -->
+    <section class="five">
+      <div class="peace">
+        <nav class="sec-nav">
+          <ul>
+            <li>Text Recognition</li>
+            <li>Focus Mode</li>
+            <li>Saving Highlights</li>
+            <li>Private Share Link</li>
+          </ul>
+        </nav>
+        <h2 class="piece">Write in pieces</h2>
+        <p class="para-elvn">
+          Focus Mode gives you a clean, fresh space to write without
+          distractions. Use it to journal, write longer drafts or expand on your
+          notes.
+        </p>
+        
+        
+
+      </div>
+    </section>
+    <!-- sec-five-end -->
+
+    <!-- sec-six-start -->
+    <section class="six">
+      <div class="trusted">
+          <div class="img-one">
+          <img
+            src="https://mymind.com/wp-content/uploads/2023/06/mymind-review-001.png"
+            alt=""
+            width="500px"
+          />
+        </div>
+        <div class="two-images">
+        <div class="img-two">
+          <img
+            src="https://mymind.com/wp-content/uploads/2023/06/mymind-review-002.png"
+            alt=""
+            width="500px"
+          />
+        </div>
+        <div class="img-three">
+          <img
+            src="https://mymind.com/wp-content/uploads/2023/06/mymind-review-003.png"
+            alt=""
+            width="500px"
+          />
+        </div>
+        </div>
+       <div class="thinker">
+          <h1 class="six-heading">
+          Trusted by thinkers<br />
+          & doers everywhere.
+        </h1>
+        <div class="been">
+        <img
+          src="https://mymind.com/wp-content/uploads/2023/06/mymind-review-004.png"
+          class="been"
+          alt=""
+          width="500px"
+        />
+        </div>
+        <div class="working">
+        <img
+          src=
+          
+          "https://mymind.com/wp-content/uploads/2023/06/mymind-review-005.png"
+          class="working"
+          alt=""
+          width="500px"
+        />
+        </div>
+        <div class="inner-three">
+          <img
+            src="https://mymind.com/wp-content/uploads/2023/04/arrow.svg"
+            alt="button-icon"
+          />NOT CONVINCED? WE HAVE MORE
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- sec-six-end -->
+
+    <!-- sec-seven-start -->
+    <section class="seven">
+      <div class="cases">
+        <p class="use">USE CASES</p>
+        <h1 class="seven-heading">For visual minds of all kinds.</h1>
+
+        <nav>
+          <ul class="cases">
+            <li class="market">Marketers</li>
+            <li>Designers</li>
+            <li>Writers</li>
+            <li>Researches</li>
+            <li>Devalopers</li>
+            <li>Everyone</li>
+          </ul>
+        </nav>
+        <div class="made-for">
+        <svg width="60" height="60" viewBox="0 0 60 60" fill="rgb(255, 237, 237)" xmlns="http://www.w3.org/2000/svg"><path d="M30 0C13.3992 0 0 13.3992 0 30C0 46.6008 13.3992 60 30 60C46.6008 60 60 46.6008 60 30C60 13.3992 46.6008 0 30 0ZM40.3992 31.6008L25.3992 40.9338C25.0664 41.133 24.7336 41.201 24.3984 41.201C24.0656 41.201 23.7984 41.1354 23.4656 40.9338C22.8656 40.601 22.5328 40.001 22.5328 39.2674V20.5996C22.5328 19.934 22.9335 19.266 23.4656 18.9332C24.0656 18.6004 24.7992 18.6004 25.3992 18.9989L40.3992 28.3997C40.9336 28.7325 41.2664 29.3325 41.2664 30.0005C41.2664 30.6661 40.9336 31.2661 40.3992 31.6013V31.6008Z"></path></svg>
+        <p class="made">MADE FOR MARKETERS</p>
+        <h1 class="eight-heading">
+          Save and find quotes & highlights<br>
+        that inspire you.
+        </h1>
+        <img src="https://mymind.com/wp-content/uploads/2023/05/for_Marketers_neue01-1.jpg" width="500px">
+        </div>
+      </div>
+    </section>
+    <!-- sec-seven-end -->
+
+    <!-- sec-eight-start -->
+    <section class="eight">
+      <div class="something">
+        <div class="mind-img">
+        <img class="is-content" src="https://mymind.com/wp-content/uploads/2023/05/statement_mymind_guy.svg" alt="statement_mymind_guy" caption="" data-width="original" data-scaling="no">
+        </div>
+        <p class="twelv">
+          We’re trying something different with mymind. It’s a refreshing approach to
+          remembering the things you care about.
+        </p>
+        <p class="thirtheen">
+          One place for everything.
+          <p class="we">
+         We put privacy first.
+         </p>
+        </p>
+        <p class="fourteen">We love beautiful, simple design
+          that considers and respects how you
+         naturally think and work.</p>
+
+         <p class="fifteen">We’d rather you spend less time
+          managing your life, and more time
+          doing what makes you happy.</p>
+
+          <button class="signup-for">
+            SIGNUP FOR FREE
+          </button>
+      </div>
+    </section>
+    <!-- sec-eight-end -->
+
+    <!-- sec-nine-start -->
+    <section class="nine">
+      <div class="flex">
+        <div class="hay-design">
+          <img src="https://mymind.com/wp-content/uploads/2024/02/NEW-FEATURE-AI-tags-for-websites-1.png" class="hay"  width="400px"  alt="">
+          <p class="features">NEW FEATURES</p>
+          <p class="text"><strong>NEW:</strong> AI tags for websites</p>
+        </div>
+        <div class="new">
+          <img src="https://mymind.com/wp-content/uploads/2024/01/NEW-The-iOS-share-panel.webp" class="hay" width="400px " alt="">
+          <p class="features">NEW FEATURES</p>
+          <p class="text"><strong>NEW:</strong> The ios share panel</p>
+        </div>
+        <div class="thoughts">
+          <img src="https://mymind.com/wp-content/uploads/2024/01/On-things-you-didnt-do-escaping-the-noise.webp" class="hay" width="400px" alt="">
+          <p class="features">THOUGHTS</p>
+          <p class="text">On things you didn't do & escaping the noise</p>
+        </div>
+      </div> 
+    </section>
+    <!-- sec-nine-end -->
+
+    <!-- sec-ten-start -->
+    <section class="ten">
+       <div class="enjoy-the-silence">
+      
+      <div class="see">
+      <div class="logo-two">
+        <img src="https://mymind.com/wp-content/uploads/2023/05/mymind_footer_logo.svg" alt="">
+      </div>
+      <div class="works">
+      
+        <h2 class="nine-heading">See how it works</h2>
+        
+        <span class="sixteen">
+          mymind walkthroughs
+        </span>
+        </div>
+        
+      </div>
+      
+      <div class="flex-two">
+        <div class="why">
+        <p class="seventeen">
+          Why people love mymind <br>
+        Our pricing<br>
+        See how it works
+        </p>
+      </div>
+        <ul class="apps">
+          <li class="us">OUR APPS</li>
+          <li>ios app</li>
+          <li>Andriod app</li>
+          <li>Browser<br>extension</li>
+          <li>MacOS app</li>
+        </ul>
+
+        <ul class="apps">
+          <li class="us">ABOUT US</li>
+          <li>Our manifesto</li>
+          <li>Our promise</li>
+        </ul>
+
+        <ul class="apps">
+          <li class="us">HELP AND CONTACT</li>
+          <li>@mymind on Twitter</li>
+          <li>Guides & contact form</li>
+          <li>Video tutorials</li>
+          <li>Sign in to mymind</li>
+          <li>Create an account</li>
+        </ul>
+     </div>
+        <hr>
+        <div class="footer">
+          <span>© mymind, inc.<br> 2024</span>
+          <span>Made with love from the PNW and New York City.</span>
+           <p class="faq">Terms & Conditions ∙ Privacy Policy ∙ FAQ</p>
+        </div>
+      </div>
+    </section>
+    <!-- sec-ten-end -->
+
+  </body>
+</html>

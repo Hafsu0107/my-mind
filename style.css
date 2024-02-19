@@ -1,0 +1,677 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* task-start */
+body {
+  font-size: 18px;
+  font-family: "Open Sans", Arial, sans-serif;
+  width: 100%;
+  min-height: 100%;
+}
+/* header-start */
+
+.nav {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+ul.first {
+  display: inline-flex;
+  gap: 50px;
+  margin-left: 6%;
+  cursor: pointer;
+}
+ul.first :hover {
+  color: black;
+}
+.first li {
+  color: grey;
+  list-style: circle;
+}
+.first ::marker {
+  background-color: orangered;
+}
+
+a {
+  color: #4a5465;
+  font-family: "Nunito-SemiBold", sans-serif;
+}
+.signup {
+  padding: 8px 20px 8px 20px;
+  background: #ff5924;
+  color: #fff;
+  border-radius: 20px;
+  font-family: "Nunito-SemiBold", sans-serif;
+  font-size: 16px;
+  border: none;
+  margin-left: 12px;
+  cursor: pointer;
+}
+/* header-end */
+
+/* sec-one-start */
+.main-heading {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-size: 90px;
+  text-align: center;
+}
+.main-para {
+  text-align: center;
+  width: 37%;
+  margin-left: 31%;
+}
+.note {
+  color: orange;
+  padding: 8px 20px 8px;
+  border-radius: 20px;
+  border-color: orange;
+  font-size: 15px;
+  font-weight: 600;
+}
+.book {
+  color: plum;
+
+  border-radius: 20px;
+  border-color: plum;
+  font-size: 15px;
+  font-weight: 600;
+  padding-left: 15px;
+  padding-bottom: 9px;
+  padding-top: 8px;
+  padding-right: 15px;
+  margin-left: 8px;
+}
+.inspiration {
+  color: skyblue;
+  padding-left: 19px;
+  padding-bottom: 9px;
+  padding-top: 8px;
+  padding-right: 18px;
+  font-weight: 600;
+  border-radius: 20px;
+  border-color: skyblue;
+  font-size: 15px;
+  margin-left: 6px;
+}
+.article {
+  color: red;
+  padding-left: 19px;
+  padding-bottom: 9px;
+  padding-top: 8px;
+  padding-right: 18px;
+  font-weight: 600;
+  border-radius: 20px;
+  border-color: red;
+  font-size: 15px;
+  margin-left: 8px;
+  margin-right: 3px;
+}
+.image {
+  color: yellow;
+  padding-left: 19px;
+  padding-bottom: 9px;
+  padding-top: 8px;
+  padding-right: 18px;
+  font-weight: 600;
+  border-radius: 20px;
+  border-color: yellow;
+  font-size: 15px;
+  margin-left: 4px;
+}
+#video1 {
+  border-radius: 16px;
+  margin-left: 16%;
+}
+/* our-manifesto-sec-start */
+.our-manifesto {
+  text-align: center;
+  margin-top: 19%;
+  color: rgb(58, 71, 90);
+}
+.sub-heading {
+  color: black;
+}
+.in {
+  font-size: 70px;
+  font-family: "Young Serif", serif;
+  font-style: italic;
+}
+.para-one {
+  letter-spacing: -0.044rem;
+  width: 43%;
+  font-family: "Young Serif", serif;
+  font-size: 36px;
+  text-align: left;
+  margin-left: 28%;
+}
+.para-two {
+  letter-spacing: -0.044rem;
+  width: 40%;
+  font-family: "Young Serif", serif;
+  font-size: 36px;
+  text-align: left;
+  margin-left: 28%;
+  margin-top: 3%;
+}
+.para-three {
+  letter-spacing: -0.044rem;
+  width: 37%;
+  font-family: "Young Serif", serif;
+  font-size: 36px;
+  text-align: left;
+  margin-left: 28%;
+  margin-top: 3%;
+}
+.no-sec {
+  font-family: "Young Serif", serif;
+  color: rgb(58, 71, 90);
+  font-size: 43px;
+  margin-left: 4%;
+  list-style: none;
+  margin-top: 3%;
+}
+.welcome-mind {
+  text-align: center;
+  background-color: rgb(209, 141, 116);
+}
+.try-it {
+  padding: 13px 10px 9px 15px;
+  background: #ff5924;
+  color: #fff;
+  border-radius: 20px;
+  font-family: "Nunito-SemiBold", sans-serif;
+  font-size: 16px;
+  border: none;
+  margin-left: 12px;
+  cursor: pointer;
+  margin-top: 5%;
+}
+/* our-manifesto-sec-end */
+/* real-mind-sec-start*/
+.second-heading {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-size: 88px;
+  text-align: center;
+  margin-top: 10%;
+}
+.para-four {
+  width: 42%;
+  margin-left: 31%;
+  font-size: 25px;
+  color: rgb(58, 71, 90);
+  margin-top: 4%;
+  letter-spacing: 1px;
+}
+#smart-bookmarking {
+  margin-left: 12%;
+  border-radius: 16px;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* real-mind-sec-end */
+/* sec-one-end */
+
+/* sec-two-start */
+.just-word {
+  margin-top: 10%;
+  text-align: center;
+  background-color: #f6f4f2;
+}
+.word {
+  color: rgb(255, 89, 36);
+  padding: 6%;
+}
+.third-heading {
+  font-family: "Young Serif", serif;
+  font-weight: 500;
+  font-size: 87px;
+  text-align: center;
+  width: 68%;
+  margin-left: 17%;
+}
+.font-ai {
+  color: rgb(255, 89, 36);
+  padding: 8px 20px 8px 20px;
+  background: #fff;
+  border-color: rgb(255, 89, 36);
+  border-radius: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 27px;
+  margin-left: 12px;
+  cursor: pointer;
+  font-weight: 900;
+}
+.para-five {
+  width: 45%;
+  margin-left: 31%;
+  font-size: 25px;
+  color: rgb(58, 71, 90);
+  margin-top: 4%;
+  letter-spacing: 1px;
+}
+/* sec-two-end */
+
+/* sec-three-start */
+.waste-time {
+  background-color: #ff5924;
+  text-align: center;
+}
+.no {
+  color: black;
+  padding: 6%;
+}
+.four-heading {
+  font-family: "Young Serif", serif;
+  font-weight: 500;
+  font-size: 87px;
+  text-align: center;
+  width: 84%;
+  margin-left: 9%;
+}
+.para-six {
+  width: 43%;
+  margin-left: 31%;
+  font-size: 21px;
+  color: #fff;
+  margin-top: 4%;
+  letter-spacing: 1px;
+}
+.inner-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  color: #fff;
+}
+/* sec-threee-end */
+
+/* sec-four-start */
+.oasis {
+  background-color: #fff;
+}
+.your {
+  color: #ff5924;
+  padding: 6%;
+  text-align: center;
+}
+.fifth-heading {
+  font-family: "Young Serif", serif;
+  font-weight: 500;
+  font-size: 87px;
+  text-align: center;
+  width: 84%;
+  margin-left: 9%;
+  text-align: center;
+}
+/* img-sec-start */
+/* img-sec-one-start */
+.img-sec-one {
+  display: flex;
+  margin-top: 5%;
+}
+.fric-img {
+  border-radius: 10px;
+  margin-left: 3%;
+}
+.fric-intro {
+  margin-left: 6%;
+}
+.frictionless {
+  font-size: 42px;
+}
+.para-seven {
+  width: 69%;
+  margin-left: 2%;
+  font-size: 21px;
+  margin-top: 4%;
+  letter-spacing: 1px;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(58, 71, 90);
+}
+.book-img {
+  border-radius: 10px;
+  margin-left: 1%;
+}
+.smart {
+  font-size: 42px;
+}
+.para-eight {
+  width: 74%;
+  font-size: 21px;
+  margin-top: 4%;
+  letter-spacing: 1px;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(58, 71, 90);
+}
+/* img-sec-one-end */
+/* img-sec-two-start */
+.img-sec-two {
+  display: flex;
+}
+.aeon {
+  border-radius: 10px;
+  margin-left: 2%;
+}
+.read {
+  font-size: 37px;
+  margin-left: 2%;
+}
+.para-nine {
+  width: 75%;
+  font-size: 21px;
+  margin-top: 3%;
+  letter-spacing: 1px;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(58, 71, 90);
+  margin-left: 2%;
+}
+.images {
+  border-radius: 10px;
+  margin-left: -3%;
+}
+.instant {
+  font-size: 37px;
+  margin-left: -2%;
+}
+.para-ten {
+  width: 68%;
+  font-size: 21px;
+  margin-top: 3%;
+  letter-spacing: 1px;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(58, 71, 90);
+  margin-left: -2%;
+}
+/* img-sec-two-end */
+/* sec-four-end */
+
+/* sec-five-start */
+.peace {
+  background-color: #f6f4f2;
+  background-image: url(https://mymind.com/wp-content/uploads/2023/06/feature-focus-mode-desktop.webp);
+  background-size: cover;
+  margin-left: 2%;
+}
+.sec-nav ul {
+  display: flex;
+  text-align: left;
+  gap: 7rem;
+  padding-top: 5%;
+  list-style: none;
+  cursor: pointer;
+  color: rgb(58, 71, 90);
+}
+.piece {
+  font-size: 37px;
+  margin-top: 3%;
+}
+.para-elvn {
+  width: 37%;
+  font-size: 21px;
+  margin-top: 3%;
+  letter-spacing: 1px;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(58, 71, 90);
+}
+/* sec-five-end */
+
+/* sec-six-start */
+.trusted {
+  background-color: #fff1f1;
+}
+
+.img-one {
+  text-align: center;
+}
+
+.two-images {
+  display: flex;
+  justify-content: center;
+}
+.thinker {
+  background-color: rgb(231, 185, 193);
+}
+.six-heading {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-size: 88px;
+  text-align: center;
+  color: white;
+}
+.been {
+  margin-left: 5%;
+  text-align: center;
+}
+.working {
+  text-align: center;
+  margin-left: -16%;
+}
+.inner-three {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.inner-three :hover {
+  color: #ff5924;
+}
+/* sec-six-end */
+
+/* sec-seven-start */
+.use {
+  color: #ff5924;
+  padding: 6%;
+  text-align: center;
+}
+.seven-heading {
+  font-family: "Young Serif", serif;
+  font-weight: 500;
+  font-size: 87px;
+  text-align: center;
+  margin-top: -4%;
+}
+.market {
+  color: #ff5924;
+  cursor: pointer;
+}
+ul.cases {
+  display: inline-flex;
+  margin-left: 16%;
+  gap: 75px;
+  margin-top: 20px;
+  color: rgb(58, 71, 90);
+  font-size: 20px;
+  cursor: pointer;
+  list-style: none;
+}
+.made-for {
+  text-align: center;
+  margin-top: 5%;
+  background-image: url(https://mymind.com/wp-content/uploads/2023/05/for_Marketers_neue01-1.jpg);
+}
+.eight-heading {
+  font-family: "Young Serif", serif;
+  font-weight: 500;
+  font-size: 60px;
+  text-align: center;
+  color: #fff;
+}
+
+/* sec-seven-end */
+
+/* sec-eight-start */
+.something {
+  text-align: center;
+  background-image: url(https://mymind.com/wp-content/uploads/2023/05/Closing_statement_bg_new.png);
+  background-size: cover;
+  padding-top: 15%;
+  background-color: #fff1f1;
+}
+.mind-img {
+  margin-top: -14%;
+}
+.twelv {
+  letter-spacing: -0.044rem;
+  width: 52%;
+  font-family: "Young Serif", serif;
+  font-size: 45px;
+  text-align: center;
+  margin-left: 23%;
+  margin-top: 4%;
+}
+.thirtheen {
+  letter-spacing: -0.044rem;
+  width: 52%;
+  font-family: "Young Serif", serif;
+  font-size: 44px;
+  text-align: center;
+  margin-left: 23%;
+}
+.we {
+  letter-spacing: -0.044rem;
+  width: 52%;
+  font-family: "Young Serif", serif;
+  font-size: 44px;
+  text-align: center;
+  margin-left: 23%;
+  margin-top: 50px;
+}
+.fourteen {
+  letter-spacing: -0.044rem;
+  width: 49%;
+  font-family: "Young Serif", serif;
+  font-size: 44px;
+  text-align: center;
+  margin-left: 24%;
+  margin-top: 4%;
+}
+.fifteen {
+  letter-spacing: -0.044rem;
+  width: 49%;
+  font-family: "Young Serif", serif;
+  font-size: 44px;
+  text-align: center;
+  margin-left: 24%;
+  margin-top: 4%;
+}
+.signup-for {
+  padding: 15px 15px 15px 15px;
+  background: #ff5924;
+  color: #fff;
+  border-radius: 28px;
+  font-family: "Nunito-SemiBold", sans-serif;
+  font-size: 16px;
+  border: none;
+  margin-left: 12px;
+  cursor: pointer;
+  margin-top: 5%;
+}
+/* sec-eight-end */
+
+/* sec-nine-start */
+.hay {
+  border-radius: 29px;
+  padding: 20px;
+  cursor: pointer;
+}
+.flex {
+  display: flex;
+}
+.features {
+  margin-left: 17px;
+  color: #4a5465;
+  font-size: 17px;
+}
+.text {
+  margin-left: 17px;
+  font-size: 24px;
+}
+/* sec-nine-end */
+/* sec-ten-start */
+.see {
+  display: flex;
+  justify-content: space-evenly;
+}
+.works {
+  background-color: #f0f2f5;
+  text-align: center;
+  padding: 10px;
+  border-radius: 18px;
+}
+.nine-heading {
+  font-family: "Young Serif", serif;
+  font-size: 44px;
+  text-align: center;
+  padding: 21px;
+}
+.sixteen {
+  font-size: 16px;
+  color: #4a5465;
+  text-align: center;
+}
+
+.flex-two {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4%;
+}
+.seventeen {
+  color: rgb(113, 114, 134);
+  text-align: left;
+  font-size: 1.333rem;
+  line-height: 2.222rem;
+  padding-left: 21px;
+  cursor: pointer;
+}
+.seventeen :hover {
+  color: #4a5465;
+}
+ul.apps {
+  color: rgb(113, 114, 134);
+  cursor: pointer;
+
+  list-style: none;
+  letter-spacing: 0.033rem;
+}
+.us {
+  letter-spacing: 0.033rem;
+  color: rgb(113, 114, 134);
+  margin-bottom: 18%;
+}
+.apps :hover {
+  color: rgb(58, 71, 90);
+}
+.apps li {
+  padding: 5px;
+
+  letter-spacing: 0.033rem;
+
+  color: rgb(113, 114, 134);
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+  letter-spacing: 0.033rem;
+  color: rgb(113, 114, 134);
+  cursor: pointer;
+}
+.footer :hover {
+  color: rgb(58, 71, 90);
+}
+/* sec-ten-end */
+/* tasks-complete */
